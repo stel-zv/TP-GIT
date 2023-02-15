@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+
+MIN - Exercice 1 - TP1
+04/03/2021
+-->
+<html>
+    <head>
+        <title>Exercice 1</title>
+        <script language="javascript">
+            function Calculer_Produit()
+            {
+            var Champ_nombre_1 ;
+            var Champ_nombre_2 ;
+            var Prix_TTC ;
+            Champ_nombre_1= document.getElementById('N1') ;
+            Champ_nombre_2 = document.getElementById('N2') ;
+            Champ_produit = document.getElementById('Produit') ;
+            Nombre_1 = parseFloat(Champ_nombre_1.value);
+            Nombre_2 = parseFloat(Champ_nombre_2.value);
+            Produit = (Nombre_1)*(Nombre_2);
+            Champ_produit.value = Produit ;
+            }
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- On associe un fichier CSS qui permet de définir la présentation -->
+        <link rel="stylesheet" type="text/css" title="design" href="stockage/fichier_css.css"/>
+        <!-- On  associe une image icone pour l'entête -->
+	    <link rel="icon" type="image/png" href="stockage/icone.png" /> 
+    </head>
+    <body>
+        <!--Logo Epf-->
+        <div id="epf">
+            <img src="stockage/logo_epf_0.png" alt="logo de l'EPF"/>
+        </div>  
+        <!--Début menu-->
+        <div id="menu">
+            <!--On définit la première image en dehors du tableau (sinon le tableau est trop grand en hauteur) -->
+            <img id="image-menu" src="stockage/home-button.png" alt="bouton home"/>
+            <!--Début du tableau menu -->
+            <table id="tmenu">
+                <tr>
+                    <!--Les images de séparateur sont dans 1 case sur 2 (pour séparer les textes)-->
+                    <td><img src="stockage/menu-separator.png" alt="image séparateur"/></td>
+                    <td class="t-text">Intégration HTML</td>
+                    <td><img src="stockage/menu-separator.png" alt="image séparateur"/></td>
+                    <td class="t-text">CSS</td>
+                    <td><img src="stockage/menu-separator.png" alt="image séparateur"/></td>
+                    <td class="t-text">JavaScript</td>
+                    <td><img src="stockage/menu-separator.png" alt="image séparateur"/></td>
+                    <td class="t-text">Php</td>
+                    <td><img src="stockage/menu-separator.png" alt="image séparateur"/></td>
+                    <td class="t-text">Autres ...</td>
+                    <td><img src="stockage/menu-separator.png" alt="image séparateur"/></td>
+                </tr>
+            </table>
+            <!--Fin du tableau menu -->
+        </div>
+        <!--Fin menu-->
+        <div id="calcul">
+            Nombre 1 <br>
+            <input type="text" size="20" id="N1"/>
+            <br> x <br>
+            Nombre 2 <br>
+            <input type="text" size="20" id="N2"/>
+            <br> <br>
+            <input type="button" value="Calculer le produit" Onclick="Calculer_Produit();" />
+            <br> <br>
+            Produit : <br>
+            <input type="text" size="20" id="Produit"/>
+        </div>
+    </body>
+</html>
