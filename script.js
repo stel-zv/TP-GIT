@@ -1,3 +1,6 @@
+//Script Exercice 2
+
+
 function Calculer_Produit()
             {
             var Champ_nombre_1 ;
