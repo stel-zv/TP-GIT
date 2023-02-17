@@ -1,0 +1,94 @@
+/*
+
+MIN - Exercice 2 - TP2
+
+*/
+
+body /*Propriétés pour le body (Toute la page affichée)*/ 
+{ 
+	width          	 	: 900px;            /* La largeur de l'élément en pixels */
+	margin          	: auto;             /* La marge de l'élément réglée automatiquement*/
+	padding         	: 1px;              /*écart de remplissage sur les cotés en pixels*/
+	margin-top      	: 0px;              /*La marge de bas de l'élement en pixels*/
+	margin-bottom   	: 10px;             /*La marge du haut de l'élement en pixels*/
+}
+/*==================== Logo EPF ====================*/
+#epf img /*Propriétés de l'image du logo epf (définie par un id)*/
+{
+    width               : 15%;              /* La largeur de l'élément en pourcentage (par rapport au body)*/
+    height              : auto;             /*La hauteur de l'élément réglée automatiquement*/
+    
+}
+/*==================== Menu====================*/
+#menu   /*Propriétés pour la div avec l'id menu*/
+{
+    height              : 38px;             /*La hauteur de l'élement en pixels (la même que celle des images)*/
+    background-image    : url("menu.png");  /*Le fond est une image*/
+    background-repeat   : no-repeat;        /*L'image de fond ne se répète pas*/
+    
+}
+#image-menu /*Propriétés pour l'image definie avec un identifiant */
+{
+     float              : left;             /*Place l'élement sur le côté gauche de la page*/
+}
+
+#tmenu /*Propriétés pour le tableau du menu (défini par un identifiant)*/
+{
+    height              : 38px;             /*La hauteur de l'élement en pixels (la même que celle des images)*/
+    border-collapse     : collapse;         /*Fait fusionner les bordures du tableau*/
+    text-align			: center;           /*Le texte est centré dans les celulles*/
+    font-size			: 11px;             /*La taille de la police est de 11 pixels*/
+    font-family         : "Arial";          /*On définit la police de caractère*/
+    color               : white;            /*La couleur de la police est blanche*/
+   
+       
+}
+
+tr, td /*Propriétés des lignes et colonnes des tableaux (ici on en a un seul, celui du menu)*/
+{
+    padding             : 0px;              /*écart de remplissage sur les cotés en pixels*/
+    height              : 38px;             /*La hauteur de l'élement en pixels (la même que celle des images)*/
+    
+}
+
+.t-text /*Propriétés des cellules de textes dans le tableau du menu (définies par des classes)*/
+{
+    padding-right       : 10px;             /*écart de remplissage sur la droite de l'élément en pixels*/
+    padding-left        : 10px;             /*écart de remplissage sur la gauche de l'élément en pixels*/
+}
+
+.t-text:hover /*Propriétés lorsque l'on survole les cellules de textes dans le tableau du menu*/
+{
+    background-image    : url(menu-hover.png);/*Le fond est une image*/
+    /*background-repeat   : no-repeat;*/
+    background-position : right 0% top 0%;  /*On la positionne en haut à droite*/
+    cursor              : pointer                       /*Le curseur devient une main*/
+    
+}
+/*==================== Image nuage====================*/
+#nuage /*Propriétés de l'image nuage (définie par un identifiant)*/
+{
+    padding-left        : 11px;             /*écart de remplissage sur la droite de l'élément en pixels*/
+    padding-top         : 3px;              /*écart de remplissage sur la gauche de l'élément en pixels*/
+}
+/*==================== Corps de la page====================*/
+.titre /*Propriétés pour les titres des paragraphes (définies par une classe)*/
+{
+    font-size			: 20px;             /*La taille de la police en pixels*/
+    margin-bottom       : 0px;              /*La marge inférieur en pixels*/
+    height              : 48px;             /*La hauteur de l'élément en pixels*/
+    color               : darkcyan;         /*La couleur de la police est cyan foncé*/
+    font-family:Arial;
+}
+
+.titre > img /*Propriétés pour les images de fils de la classe titre (donc les images dans la classe titre)*/
+{
+    vertical-align      :  middle;          /*Le texte est aligné verticalement au niveau du milieu de l'image*/
+    
+}
+
+#calcul{
+    margin-top:2%;
+    text-align: center;
+    font-family: Arial;
+}
