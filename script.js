@@ -14,3 +14,7 @@ function Calculer_Produit()
             Produit = (Nombre_1)*(Nombre_2);
             Champ_produit.value = Produit ;
             }
+
+function Test(){
+    
+}
