@@ -92,3 +92,9 @@ tr, td /*Propriétés des lignes et colonnes des tableaux (ici on en a un seul, 
     text-align: center;
     font-family: Arial;
 }
+
+#N1, #N2, #N3, #Produit{
+    text-align: center;
+    padding: 6px 0px 6px 0px;
+
+}
